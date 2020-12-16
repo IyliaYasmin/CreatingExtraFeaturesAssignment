@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" 
+    xmlns="http://java.sun.com/xml/ns/j2ee" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+    http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<servlet>
+   <servlet-name>Hello</servlet-name>
+   <servlet-class>HelloForm</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Hello</servlet-name>
+   <url-pattern>/HelloForm</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>Hola</servlet-name>
+   <servlet-class>NewStudentProcess</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Hola</servlet-name>
+   <url-pattern>/NewStudentProcess</url-pattern>
+</servlet-mapping>
+<servlet>
+   <servlet-name>Halu</servlet-name>
+   <servlet-class>SettingsProcess</servlet-class>
+</servlet>
+<servlet-mapping>
+   <servlet-name>Halu</servlet-name>
+   <url-pattern>/SettingsProcess</url-pattern>
+</servlet-mapping>
+ <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
